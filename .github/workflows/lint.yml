@@ -17,6 +17,6 @@ jobs:
           toolchain: stable
           components: clippy
       - name: Install dependencies 
-        run: sudo apt install libdbus-1-dev pkg-config
+        run: sudo apt install libdbus-1-dev pkg-config gdk-3.0
       - name: Lint
         run: cargo clippy -- -D warnings
